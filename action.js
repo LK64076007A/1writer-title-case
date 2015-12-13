@@ -1,10 +1,11 @@
-// 1Writer Title Case Action
-
 // Adheres to John Gruber’s rules for title case
 // http://daringfireball.net/2008/05/title_case
 
 // Based on Paul Mucur’s Ruby implementation
 // https://github.com/mudge/title_case
+
+// Adopted from Brian Jones 1Writer implementation
+// for TextExpander
 
 var smallWordsRegex =
 			/^(a|an|and|as|at|but|by|en|for|if|in|of|on|or|the|to|v\.?|via|vs\.?)$/;
@@ -59,10 +60,4 @@ function toTitleCase(text) {
 	return result;
 }
 
-// ACTION
-
-var selectedText = editor.getSelectedText();
-
-var formattedText = toTitleCase(selectedText);
-
-editor.replaceSelection(formattedText);
+toTitleCase(TextExpander.pasteboardText);
