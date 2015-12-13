@@ -5,7 +5,8 @@
 // https://github.com/mudge/title_case
 
 // Adopted from Brian Jones 1Writer implementation
-// for TextExpander
+// to work with TextExpander on Mac and iOS
+// https://github.com/jonesbp/1writer-title-case
 
 var smallWordsRegex =
 			/^(a|an|and|as|at|but|by|en|for|if|in|of|on|or|the|to|v\.?|via|vs\.?)$/;
